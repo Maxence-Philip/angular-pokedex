@@ -1,0 +1,24 @@
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 0 grey;
+  transition:0.3s;
+}
+
+.team-container:hover {
+  box-shadow: 4px 4px 4px 0 grey;
+}
+
+.team-label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.team-icon {
+  cursor: pointer;
+  font-size: 18px;
+  top: 5px;
+}

@@ -1,0 +1,8 @@
+<div class="pokemon-team-container">
+  <label class="team-label">{{ label }}</label>
+  <mat-icon class="team-icon">visibility</mat-icon>
+  <mat-icon class="team-icon">delete</mat-icon>
+  <div class="team-container">
+    <app-pokemon-placeholder *ngFor="let pokemon of team" [imageUrl]="pokemon.spriteUrl"></app-pokemon-placeholder>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: darkred;
+}
+
+li:hover a {
+  color: white;
+}
+
+a {
+  display: block;
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.menu-left {
+  width: 200px;
+  text-align: center;
+  height: 100%;
+}

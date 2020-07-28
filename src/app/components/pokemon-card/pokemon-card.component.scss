@@ -1,0 +1,26 @@
+.pokemon-card-entry {
+  width: 180px;
+  height: 180px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.pokemon-card-entry:hover {
+  box-shadow: -1px 1px 15px 0px #8080807a;
+}
+
+.pokemon-card-sprite {
+  top: 50%;
+  left: 50%;
+  transform: translate(25%, 5%);
+  height: 156px;
+  width: 156px;
+}
+
+.pokemon-card-number {
+  float: right;
+}
+
+.pokemon-card-content {
+  font-weight: bold;
+}

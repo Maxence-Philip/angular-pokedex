@@ -1,0 +1,7 @@
+<nav class="menu-left">
+  <ul>
+    <li *ngFor="let page of pageList; index as i">
+      <a [routerLink]="'/' + page" routerLinkActive="active">{{ page | titlecase }}</a>
+    </li>
+  </ul>
+</nav>

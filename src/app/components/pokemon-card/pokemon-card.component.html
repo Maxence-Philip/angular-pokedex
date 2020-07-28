@@ -1,0 +1,12 @@
+<mat-card class="pokemon-card-entry">
+  <img
+    class="pokemon-card-sprite"
+    mat-card-image
+    [src]="pokemon.spriteUrl"
+    [alt]="pokemon.name + 'sprite'"
+  >
+  <mat-card-content class="pokemon-card-content">
+    {{ pokemon.name | titlecase }}
+    <span class="pokemon-card-number">{{ pokemon.id | id }}</span>
+  </mat-card-content>
+</mat-card>
