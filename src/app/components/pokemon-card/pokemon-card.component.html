@@ -1,4 +1,8 @@
-<mat-card class="pokemon-card-entry">
+<mat-card
+  mat-ripple
+  class="pokemon-card-entry mat-elevation-z4"
+  (click)="openPokemonDialog()"
+>
   <img
     class="pokemon-card-sprite"
     mat-card-image

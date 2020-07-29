@@ -1,6 +1,6 @@
 <app-header [title]="title"></app-header>
 <mat-form-field class="example-form-field">
-  <mat-label>Search Pokemon</mat-label>
+  <mat-label>Search for Pokemon</mat-label>
   <input #searchInput matInput type="text" [(ngModel)]="search">
   <button mat-button *ngIf="search" matSuffix mat-icon-button aria-label="Clear" (click)="onClearSearch()">
     <mat-icon>close</mat-icon>

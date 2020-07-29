@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { PokemonCardComponent } from './pokemon-card.component';
-import { IdPipe } from '../../pipes/id.pipe';
 import { SharedModule } from '../../shared.module';
+import { PokemonDescModalModule } from '../pokemon-desc-modal/pokemon-desc-modal.module';
 
 @NgModule({
   declarations: [
     PokemonCardComponent,
-    IdPipe,
   ],
   imports: [
     SharedModule,
+    PokemonDescModalModule,
   ],
   exports: [
     PokemonCardComponent

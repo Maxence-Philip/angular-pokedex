@@ -32,7 +32,6 @@ export class PokeapiService {
             const pokemon: Pokemon = {
               name: resp.name,
               id: resp.id,
-              order: resp.order,
               types: PokeapiService.handleTypes(resp.types),
               spriteUrl: forms.sprites.front_default,
             };

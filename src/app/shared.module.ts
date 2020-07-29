@@ -6,8 +6,16 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatRippleModule } from '@angular/material/core';
+import { MatDialogModule } from '@angular/material/dialog';
+import { IdPipe } from './pipes/id.pipe';
+import { TypesPipe } from './pipes/types.pipe';
 
 @NgModule({
+  declarations: [
+    IdPipe,
+    TypesPipe,
+  ],
   imports: [
     CommonModule,
     HeaderModule,
@@ -16,6 +24,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatInputModule,
     MatButtonModule,
     MatIconModule,
+    MatRippleModule,
+    MatDialogModule,
   ],
   exports: [
     CommonModule,
@@ -25,6 +35,10 @@ import { MatIconModule } from '@angular/material/icon';
     MatInputModule,
     MatButtonModule,
     MatIconModule,
+    MatRippleModule,
+    MatDialogModule,
+    IdPipe,
+    TypesPipe,
   ]
 })
 export class SharedModule {}

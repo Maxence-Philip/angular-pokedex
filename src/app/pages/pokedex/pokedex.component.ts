@@ -32,7 +32,7 @@ export class PokedexComponent implements OnInit, AfterViewInit {
       debounceTime(100),
       distinctUntilChanged(),
     ).subscribe(() => {
-      const searchValueRegex = new RegExp(this.searchInput.nativeElement.value);
+      const searchValueRegex = new RegExp(this.searchInput.nativeElement.value, 'i');
       this.filteredPokeList = this.pokeList.filter(pokemon => searchValueRegex.test(pokemon.name));
     });
   }
