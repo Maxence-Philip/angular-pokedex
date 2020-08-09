@@ -9,6 +9,7 @@ export class NavigationComponent implements OnInit {
   public pageList: string[] = [
     'dashboard',
     'pokedex',
+    'teams',
   ];
 
   constructor() { }

@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
-import { DashboardComponent } from './dashboard.component';
-import { Routes, RouterModule } from '@angular/router';
-import { PokemonTeamModule } from '../../components/pokemon-team/pokemon-team.module';
+import { TeamsComponent } from './teams.component';
+import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from '../../shared.module';
+import { PokemonTeamModule } from '../../components/pokemon-team/pokemon-team.module';
 
 const routes: Routes = [{
   path: '',
-  component: DashboardComponent,
+  component: TeamsComponent,
 }];
 
 @NgModule({
   declarations: [
-    DashboardComponent,
+    TeamsComponent,
   ],
   imports: [
     RouterModule.forChild(routes),
@@ -22,5 +22,5 @@ const routes: Routes = [{
     RouterModule,
   ],
 })
-export class DashboardModule {
+export class TeamsModule {
 }

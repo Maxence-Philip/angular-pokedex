@@ -1,0 +1,18 @@
+.new-team-search {
+  display: flex;
+}
+
+.pokemon-list {
+  height: 600px;
+  overflow: scroll;
+}
+
+.pokemon-item {
+  display: flex;
+  border: 1px solid;
+  z-index: 10;
+}
+
+.pokemon-item:hover {
+  size: 2em;
+}

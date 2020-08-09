@@ -1,0 +1,7 @@
+<app-header [title]="title"></app-header>
+<div class="team-header">
+  <button mat-flat-button [color]="'primary'" (click)="addTeam()">New team</button>
+</div>
+<div class="team-content">
+  <app-pokemon-team *ngFor="let team of pokeTeams" [team]="team.pokemons"></app-pokemon-team>
+</div>

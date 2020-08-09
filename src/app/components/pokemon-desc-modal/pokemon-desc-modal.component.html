@@ -1,0 +1,20 @@
+<div mat-dialog-title class="dialog-title">
+  <h1>{{ data.pokemon.name }} {{ '#' + data.pokemon.id }}</h1>
+  <img class="pokeball-sprite" src="/assets/images/poke-ball.png" alt="Pokeball sprite"/>
+</div>
+<div mat-dialog-content class="dialog-content">
+  <img class="pokemon-sprite" [src]="data.pokemon.spriteUrl" [alt]="data.pokemon.name + ' sprite'">
+  <div class="pokemon-infos">
+    <div class="pokemon-types">
+      <span *ngFor="let type of data.pokemon.types"
+            [ngClass]="['type-class', type + '-color']"
+      >
+        {{ type }}
+      </span>
+    </div>
+    <hr>
+    <div class="pokemon-description">
+      {{ data.pokemon.description }}
+    </div>
+  </div>
+</div>

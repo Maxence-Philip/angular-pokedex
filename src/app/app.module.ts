@@ -9,6 +9,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { IconAnimationComponent } from './components/icon-animation/icon-animation.component';
 import { NavigationModule } from './components/navigation/navigation.module';
+import { SpinnerModule } from './components/spinner/spinner.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { NavigationModule } from './components/navigation/navigation.module';
     MatSidenavModule,
     MatIconModule,
     NavigationModule,
+    SpinnerModule,
   ],
   bootstrap: [AppComponent]
 })

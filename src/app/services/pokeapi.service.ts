@@ -27,13 +27,18 @@ export class PokeapiService {
   public getPokemon(pokemonName: string | number): Observable<Pokemon> {
     return this.http.get<any>(`${this.url}/pokemon/${pokemonName}`).pipe(
       mergeMap((resp: any) => {
-        return forkJoin([this.http.get<any>(`${this.url}/pokemon-form/${resp.id}`)]).pipe(
-          map(([forms]) => {
+        return forkJoin([
+          this.http.get<any>(`${this.url}/pokemon-form/${resp.id}`),
+          this.http.get<any>(`${this.url}/pokemon-species/${resp.id}`),
+        ]).pipe(
+          map(([forms, species]) => {
             const pokemon: Pokemon = {
               name: resp.name,
               id: resp.id,
               types: PokeapiService.handleTypes(resp.types),
               spriteUrl: forms.sprites.front_default,
+              description: species.flavor_text_entries[0].flavor_text,
+              genus: species.genera[7].genus,
             };
             return pokemon;
           })

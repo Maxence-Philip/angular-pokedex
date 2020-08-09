@@ -5,4 +5,6 @@ export interface Pokemon {
   id: number;
   spriteUrl: string;
   types: TypesEnum[];
+  description: string;
+  genus: string;
 }
